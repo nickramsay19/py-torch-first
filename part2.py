@@ -21,3 +21,7 @@ test = datasets.MNIST(
 # batch sizes are set to allow operation in RAM capable sizes of data
 trainset = torch.utils.data.DataLoader(train, batch_size = 10, shuffle = True)
 testset = torch.utils.data.DataLoader(test, batch_size = 10, shuffle = True)
+
+for data in trainset:
+    print(data)
+    break
